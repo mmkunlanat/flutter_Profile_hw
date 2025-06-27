@@ -64,7 +64,7 @@ class MainApp extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // ✅ แถวข้อมูล PREP, COOK, FEEDS
+              // แถวข้อมูล Phone, Email, Social
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Row(
@@ -72,23 +72,26 @@ class MainApp extends StatelessWidget {
                   children: [
                     Column(
                       children: const [
-                        Icon(Icons.kitchen, color: Color.fromARGB(255, 176, 39, 21)),
-                        Text('PREP:'),
-                        Text('25 min'),
+                        Icon(Icons.phone, color: Color.fromARGB(255, 76, 175, 80)),
+                        SizedBox(height: 5),
+                        Text('PHONE'),
+                        Text('098-7654321'),
                       ],
                     ),
                     Column(
                       children: const [
-                        Icon(Icons.timer, color: Color.fromARGB(255, 37, 141, 40)),
-                        Text('COOK'),
-                        Text('1 hr'),
+                        Icon(Icons.email, color: Color.fromARGB(255, 33, 150, 243)),
+                        SizedBox(height: 5),
+                        Text('EMAIL'),
+                        Text('example@email.com'),
                       ],
                     ),
                     Column(
                       children: const [
-                        Icon(Icons.restaurant, color: Color.fromARGB(255, 102, 102, 102)),
-                        Text('FEEDS'),
-                        Text('4-6'),
+                        Icon(Icons.share, color: Color.fromARGB(255, 156, 39, 176)),
+                        SizedBox(height: 5),
+                        Text('SOCIAL'),
+                        Text('@kunlanat'),
                       ],
                     ),
                   ],
